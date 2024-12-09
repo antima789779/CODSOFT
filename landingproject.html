@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            text-decoration:none ;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+          
+
+        }
+        .container{
+            border:0.4px solid black;
+            background-color: whitesmoke;
+        }
+        .container1{
+            border:0px solid black;
+          
+            width:100%;
+        }
+        .header{
+            border:0px solid black;   
+            width:100%;
+            
+        }
+        .header1{
+            background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+            border:0px solid black; 
+            width:100%;
+            display:flex;
+            justify-content:space-evenly;
+            padding:4rem;
+           /* padding-right:4rem;
+            padding-left:4rem;*/
+        }
+        .logo{
+            display:flex;
+            justify-content: space-evenly;
+            gap:.8rem;
+          
+        }
+        .number{
+            display:flex;
+            gap:1rem;
+            font-size:1.3rem ;
+            display:flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .buttonrequest{
+            height:70px;
+            border:1px solid white;
+            border-radius:40px;
+            padding:.8rem;
+            background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+font-size:1rem;
+color:whitesmoke;
+font-weight:bold;
+padding:1.3rem;
+        }
+        .header2{
+            border:0px solid black; 
+            width:100%;
+           
+            display:flex;
+            justify-content:center ;
+            gap:5rem;
+            color:#333333;
+            background-color:whitesmoke ;
+        }
+        .logo_2{
+            display:flex;
+            gap:.8rem;
+        }
+        .logo-text{
+            font-size:1.7rem;
+            font-weight:bold;
+            padding-top:.7rem;
+        }
+        .navlist{
+            display:flex;
+            font-size:1.3rem;
+            font-weight: bold;
+            gap:2rem;
+            color:black;
+            text-align:center;
+            padding-top:.9rem;
+        }
+        .navlist a{
+            color:black ;
+        }
+        .number{
+            font-size:2.1rem;
+            font-weight:300;
+        }
+        .Buynow{
+           
+            width:60px;
+            background-color: #FBDA61;
+            margin:0px;
+            text-align: center;
+        }
+        .body{
+            width:100%;
+            height:80%;
+            border:0px solid black;
+            background-color: coral;
+            color:whitesmoke;
+            display:flex;
+            flex-direction:column;
+            gap:1.3rem;
+            box-sizing:border-box;
+            padding:100px;
+            background-image:url('https://png.pngtree.com/background/20230426/original/pngtree-the-young-people-standing-in-a-forest-among-the-trees-picture-image_2492349.jpg') ;
+        }
+        span{
+            font-size:1.3rem;
+            font-weight: bold;
+        }
+        .creative{
+            font-size:3rem;
+            font-weight:bolder;
+        }
+        .para1{
+            font-size:1.2rem;
+            font-weight:bolder;   
+        }
+        .button{
+            display:flex;
+            gap:1.2rem;
+        }
+        .buttonreadmore{
+            width:170px;
+            height:60px;
+            border:1px solid white;
+            border-radius:30px;
+            background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+font-size:1.2rem;
+font-weight: bold;
+color:whitesmoke;
+box-shadow:-100px 0px 3px #f8afe2;  
+text-shadow:-100px 0px 3px whitesmoke;  
+        }        
+        .buttonrequestaconsult{
+            width:260px;
+            height:60px;
+            border:2px solid white;
+            border-radius:30px;
+            font-size:1.2rem;
+font-weight:bold;
+background-color: rosybrown;
+            color:whitesmoke;
+            box-shadow:100px 0px 3px rgb(157, 119, 119);
+            text-shadow:100px 0px 3px whitesmoke;
+        }
+        .footer{
+            /*color:whitesmoke;*/
+            padding:2.2rem;
+            background-color:background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+        }
+        .footerlogo{
+            display:flex;
+            gap:1.5rem;
+            color:whitesmoke;  
+        }
+        .footerlogo1{
+            display:flex;
+            justify-content: center;
+            gap:1.2rem;
+            text-align: center;
+        }
+        .footerlogo2{
+            display:flex;
+            justify-content:center;
+            gap:1.2rem;
+        }
+        .footerlogo3{
+            display:flex;
+            justify-content: center;
+            gap:1.2rem;
+        }
+        .footerlogo_1{
+            display:flex;
+            flex-direction:column;
+        }
+        .footerlogo_2{
+            display:flex;
+            flex-direction:column;
+        }
+        .footerlogo_3{
+            display:flex;
+            flex-direction:column;
+        }
+        .footerlogo1-text{
+            font-size:1.3rem;
+        }
+        .footerpara1{
+            font-size:1.3rem;
+            font-weight: bold;
+        }
+        .container2{
+           background-color:white;
+            
+             width:100%;
+             box-sizing:border-box;
+             padding:60px;
+             color:#333333;
+        } 
+        .body2{
+            display:flex;
+            flex-direction:row;
+            gap:2rem;
+            padding:60px;
+            justify-content:center;  
+        }
+        .body-text-heading{
+            font-size:1.8rem;
+            font-weight: bold;
+            margin-bottom:1rem;
+        }
+        .body-text-desc-heading{
+            font-size:1.7rem;
+            font-weight:bold;
+        }
+        .body-text-desc2{
+            font-size:1.2rem;
+            font-weight: 600;
+            line-height:1.6rem;
+            box-sizing:border-box;
+            padding:1.2rem;
+        }
+        .body-text-button{
+            width:150px;
+            height:50px;
+            border:1px solid black;
+            font-size:1rem;
+            font-weight:bold ;
+            padding:7px;
+            border-radius:30px;
+            background-color: #FBDA61;
+            background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+            margin-top:40px;
+        }
+        .footer2{
+            display:flex;
+            flex-direction:column;
+            padding:3rem;
+        }
+        .footer2-heading{
+            font-size:1.8rem;
+            font-weight:600;
+            padding:20px;
+            margin-left:70px;
+        }
+        .footer2-img{
+            display:flex;
+            gap:5rem;
+            justify-content:center ;
+            padding:20px;
+        }
+    </STYLE>
+</head>
+<body>
+<div class="container">
+    <div class="container1">
+        <div class="header">
+            <div class="header1">
+                <div class="logo">
+                    <div class="logo1">
+                        <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" width="50px" height="50px"/>
+                    </div>
+                    <div class="logo2">
+                        <img
+                        src="https://www.freeiconspng.com/uploads/linkedin-icon-png-transparent-images--pictures--becuo-4.png" width="50px" height="50px"/>
+                    </div>
+                    <div class="logo3">
+                        <img
+                        src="https://keystoliteracy.com/wp-content/uploads/2020/01/twitter-logo-transparent-15.png" width="50px" height="50px"/>
+                    </div>
+                <div class="logo4">
+                        <img
+                        src="https://th.bing.com/th/id/R.2b6475a64f3b53207b33ac3c5679aa4b?rik=7Da9QXxyPl72ZQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2ftransparent-youtube-icon%2ftransparent-youtube-icon-13.png&ehk=zmcdFCNsCUWVNWIDdkL2Hgn7jocwvdaU8CXqVv96NJw%3d&risl=&pid=ImgRaw&r=0"width="50px" height="50px"/>
+                    </div>
+                    <div class="logo5">
+                        <img
+                        src="https://th.bing.com/th/id/R.3568c9dc79892a2d13d5f5a774519748?rik=QhyGvwTlIUmL1A&riu=http%3a%2f%2fpngimg.com%2fuploads%2fsnapchat%2fsnapchat_PNG15.png&ehk=lw8%2fY%2bkvv5IBXbav4ZJn4coPilJiRuZ7t7sFYlAM%2f5E%3d&risl=&pid=ImgRaw&r=0"width="50px" height="50px"/>
+                    
+                    </div>
+                    <div class="logo6">
+                        <img
+                        src="https://th.bing.com/th/id/R.df94525453df410aec54163f8b8c5eba?rik=J7eImlgCMV0JAg&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2011%2f08%2ffree-facebook-icon_51211.jpg&ehk=R6SqCYH%2bj5a1lk8AC8UpojK%2fO6fN5E9LAvFbl7Vk6AE%3d&risl=&pid=ImgRaw&r=0" width="50px" height="50px"/>
+                    </div>
+                </div>
+                <div class="number">
+                        <a href="tel:123456789">Contact us-1234560789</a>
+                        <a href="mail To:antima1234@gmail.com">mail to:antima1234@gmail.com</a>
+                </div>
+                <button class="buttonrequest">REQUEST A CONSULT</button>
+            </div>
+            <div class="header2">
+                <div class="logo_2">
+                    <div class="logo-img">
+                        <img 
+                        src="https://cdn.iconscout.com/icon/premium/png-256-thumb/landing-page-13-534545.png" width="60px" height="60px"/>
+                    </div>
+                  <div class="logo-text">LANDING PAGE</div>
+                </div>
+                <div class="navlist">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Page</a>
+                    <a href="#">Services</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Contact</a>
+                    <a href="#" class="Buynow">Buy Now</a>
+                </div>
+                <div class="search">
+                    <img 
+                    src="https://clipground.com/images/logo-search-png-5.png" width="70px" height="70px"/>
+                </div>
+            </div>
+            <div class="body">
+                <span>WE  ARE  CREATIVE</span>
+                <span class="creative">CREATIVE DIGITAL AGENCY</span>
+                <p class="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                     Quod blanditiis quaerat reiciendis quisquam nisi aliquam accusamus obcaecati illum pariatur consectetur,
+                      natus culpa minus maiores quasi! Alias deserunt facere itaque in!</p>
+                <div class="button">
+                    <button class="buttonreadmore">READ MORE</button>
+                    <button class="buttonrequestaconsult">REQUEST A CONSULT</button>  
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerlogo">
+                <div class="footerlogo_1">
+                <div class="footerlogo1">
+                    <div class="footerlogo1-img">
+                        <img
+                        src="https://cdn.iconscout.com/icon/premium/png-512-thumb/spacecraft-4-383957.png" width="40px" height="40px"/>
+                    </div>
+                    <div class="footerlogo1-text">LAUNCH BUSINESS</div>
+                </div>
+                <div class="footerpara1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt corporis praesentium
+                     voluptatem 
+                     </div>
+            </div>
+                <div class="footerlogo_2">
+                <div class="footerlogo2">
+                    <div class="footerlogo1-img">
+                        <img
+                        src="https://www.svgrepo.com/show/128260/headphones.svg"width="40px" height="40px"/>
+                    </div>
+                    <div class="footerlogo1-text">ONLINE SUPPORT TEAM</div>  
+                </div>
+                <div class="footerpara1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt corporis praesentium
+                    voluptatem 
+                    </div>
+            </div>
+                <div class="footerlogo_3">
+                <div class="footerlogo3">
+                    <div class="footerlogo1-img">
+                        <img
+                        src="https://cdn-icons-png.flaticon.com/512/7688/7688836.png"width="40px" height="40px"/>
+                    </div>
+                    <div class="footerlogo1-text">TIME MANAGEMENT</div>
+                </div>
+                <div class="footerpara1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sunt corporis praesentium
+                    voluptatem  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="body2">
+            <div class="body-text">
+                <div class="body-text-heading">ABOUT US</div>
+                <div class="body-text-desc">
+                    <div class="body-text-desc-heading">15 years,we passionate about achieving better
+                         results for our clients</div>
+                    <div class="body-text-desc2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         At optio atque ex dolores,
+                         vitae perspiciatis. Expedita libero odio ducimus quas adipisci ipsum fugit 
+                          Voluptatum, laudantium. provident?amet consectetur adipisicing elit. 
+                          At optio atque ex dolores,
+                          vitae perspiciatis. Expedita libero odio ducimus quas 
+                          adipisci ipsum fugit iure quis,
+                          </div>
+                </div>
+                <button class="body-text-button">READ MORE</button>
+            </div>
+            <div class="body-img">
+                <img
+                src="https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2021/03/01055833/successful-job-seekers.png" width="250px" height="250px"/>
+            </div>
+            </div>
+
+            </div>
+        
+        <div class="footer2">
+            <div class="footer2-heading">OUR SERVICES</div>
+            <div class="footer2-img">
+                <div class="footer2-img1">
+                    <img src="https://images.unsplash.com/photo-1588600878108-578307a3cc9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDc0fHx1eHxlbnwwfHx8fDE2NTE0ODY3MDk&ixlib=rb-1.2.1&q=80&w=2000"width="310px" height="220px"/>
+                </div>
+                <div class="footer2-img1">
+                    <img src="https://img.freepik.com/premium-photo/business-startup-planning-strategy-people-concept-happy-creative-team-with-scheme-flip-board-office_380164-131994.jpg?w=2000"width="310px" height="220px"/>
+                </div>
+                <div class="footer2-img1">
+                    <img src="https://zco-wp-staging.s3-accelerate.amazonaws.com/wp-content/uploads/2018/04/14012816/3d-computer-graphics-sample.jpg"width="310px" height="220px"/>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
